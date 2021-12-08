@@ -1,0 +1,51 @@
+@page "/todo"
+<link href="stylesheet" rel="TodoStyle.css" />
+
+<PageTitle>Todo</PageTitle>
+
+<div class="main-div">
+    <div class="todo-header">
+        <h1>Todos (@todos.Count(todo => !todo.isCompleted))</h1>
+    </div>
+    <div class="todo-app" id="form">
+        <input class="todo-input" placeholder="add a todo" @bind="newTodo" />
+        <button class="add-button" @onclick="AddTodo">Add Todo</button>
+    </div>
+
+    @for (int i = 0; i < todos.Count; i++)
+    {
+        var index = i;
+        var todo = todos[i];
+        <li class="todo-items">
+            <div 
+                class="@(todo.isCompleted ? "todo-item-text-complete" : "todo-item-text")"
+                @onclick="@(() => completedTodo(todo))">
+                @todo.Title
+            </div>
+            <div class="todo-item-close" @onclick="@(() => DeleteTodo(index))">&times;</div>
+        </li>
+    }
+</div>
+
+
+@code{
+    private List<TodoItem> todos = new();
+    
+    private string newTodo = "";   // todo input
+    
+    private void AddTodo(){
+        //todo: Add the todo
+        if(!string.IsNullOrWhiteSpace(newTodo)){
+            todos.Add(new TodoItem {Title = newTodo});
+            newTodo = string.Empty;
+        }
+    }
+    private void DeleteTodo(int index){
+         todos.RemoveAt(index);
+    }
+
+    private void completedTodo(TodoItem todo){
+        todo.isCompleted = true;
+    }
+}
+
