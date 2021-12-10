@@ -1,25 +1,23 @@
-.head{
-    color: brown;
-}
+
 .main-div{
-    width: 625px;
-    height: auto;
-    margin: 100px auto;
-    padding: 20px 20px 9px;
-    border-radius: 3px;
-    outline: 2px solid grey;
-    background: white;
+  width: 625px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  border-radius: 3px;
+  outline: 2px solid grey;
+  background: white;
 }
+
 .todo-header{
     text-align: center;
   }
 
 .todo-app{
-    margin-bottom: 30px;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .todo-input{
@@ -27,7 +25,6 @@
   display: flex;
   flex: 4;
   height: 40px;
-  border-radius: 0px;
   outline: none;
   border: 1px solid rgb(116, 14, 116);
   padding: 18px 20px;
@@ -36,9 +33,9 @@
 }
 
 .todo-input[type=text]:focus{
-    outline:1px solid #555;
-    border: none;
-  }
+  outline:1px solid #555;
+  border: none;
+}
 
 .add-button{
   background-color: rgb(116, 14, 116);
@@ -52,19 +49,21 @@
 }
 
 .add-button:hover{
-    background-color:  rgb(172, 53, 172);
+  background-color:  rgb(172, 53, 172);
 }
 
 .todo-items{
-    text-align: left;
+  text-align: left;
   background-color: white;
-  border: 3px solid rgb(238, 177, 238);
-  border-radius: 5px;
   padding: 10px;
 }
 
+.todo-items-div{
+  border: 1px solid rgb(238, 177, 238);
+}
+
 li{
-    cursor: pointer;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,22 +75,32 @@ li{
   transform: scale(1);
 }
 
-li .todo-item-text{
+.todo-item-text{
   flex-grow: 1;
   padding-left: 16px;
   margin-right: 15px;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+li:nth-child(odd) {
+  background: rgb(236, 234, 234);
+}
+
+li:hover {
+  background: #e6e3e3;
 }
 
 .todo-item-close{
-    color: red;
-    font-weight: 900;
-    font-size: 30px;
+  color: red;
+  font-weight: 900;
+  font-size: 30px;
 }
+
 .todo-item-text-complete{
-    text-decoration: line-through;
-    flex-grow: 1;
+  text-decoration: line-through;
+  flex-grow: 1;
   padding-left: 16px;
   margin-right: 15px;
-  font-weight: 500;
+  font-weight: 700;
+  color: #555;
 }

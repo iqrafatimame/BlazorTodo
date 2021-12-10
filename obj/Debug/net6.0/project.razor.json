@@ -78,39 +78,6 @@
         }
       },
       {
-        "HashCode": -1309795800,
-        "Kind": "Components.Component",
-        "Name": "BlazorTodo.Pages.Index",
-        "AssemblyName": "BlazorTodo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorTodo.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 1691573250,
-        "Kind": "Components.Component",
-        "Name": "BlazorTodo.Pages.Index",
-        "AssemblyName": "BlazorTodo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorTodo.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorTodo.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 258086013,
         "Kind": "Components.Component",
         "Name": "BlazorTodo.Pages.Todo",
@@ -16594,11 +16561,6 @@
     {
       "FilePath": "f:\\Technosoft\\Blazor - calculator + todo\\BlazorTodo\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "f:\\Technosoft\\Blazor - calculator + todo\\BlazorTodo\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {

@@ -25,3 +25,8 @@ F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\ref\BlazorTodo.dll
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.pdb
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.genruntimeconfig.cache
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\web.config
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\appsettings.Development.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\appsettings.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\BlazorTodo.deps.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\BlazorTodo.runtimeconfig.json

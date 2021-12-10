@@ -1,0 +1,7 @@
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\BlazorTodo.exe
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\appsettings.Development.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\appsettings.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\BlazorTodo.dll
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\BlazorTodo.deps.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\BlazorTodo.runtimeconfig.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\dist\BlazorTodo.pdb
