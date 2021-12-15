@@ -1,29 +1,60 @@
 @page "/"
 @page "/todo"   
+@inject IJSRuntime JS 
 <link href="stylesheet" rel="TodoStyle.css" />
 
 <PageTitle>Todo</PageTitle>
 
 <div class="main-div">
+    
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+            <div class="toast-body">
+            Hello, world! This is a toast message.
+            </div>
+    </div>
+</div>
     <div class="todo-header">
         <h1>Todos (@todos.Count(todo => !todo.isCompleted))</h1>
     </div>
     <form @onsubmit=AddTodo class="todo-app" id="form">
         <input class="todo-input" placeholder="add a todo" @bind="newTodo"  />
+         <MatTextField Label="Add todo task here"></MatTextField>
         <button class="add-button" @onclick="AddTodo">Add Todo</button>
+       
     </form>
     <div class="todo-items-div">
         @for (int i = 0; i < todos.Count; i++)
         {
             var index = i;
             var todo = todos[i];
+            todo.id = i;
+            bool isEditting = false; 
+            
             <li class="todo-items">
-                <div 
+                <input type="checkbox" @bind=todo.isCompleted /> 
+                <div
                     class="@(todo.isCompleted ? "todo-item-text-complete" : "todo-item-text")"
                     @onclick="@(() => completedTodo(todo))">
                     @todo.Title
+                   
                 </div>
-                <div class="todo-item-close" @onclick="@(() => DeleteTodo(index))">&times;</div>
+                <div class="actions">
+                <div class="todo-item-edit" 
+                     @onclick="@(() => EditTodo(todo.id))" >
+                        edit
+                    </div>
+                    <div class="todo-item-close" 
+                        @onclick="@(() => DeleteTodo(todo.id))">
+                        &times;
+                    </div>
+                </div>
             </li>
         }
     </div>
@@ -31,15 +62,34 @@
 
 
 @code{
-    private List<TodoItem> todos = new();
+    private List<TodoItem> todos = new List<TodoItem>();
     private string newTodo = "";   // todo input
-    
+    int editedId = 0;
+
+    private async Task showToast(){
+        await JS.InvokeVoidAsync("showtoast");
+    }
     private void AddTodo(){
         if(!string.IsNullOrWhiteSpace(newTodo)){
-            todos.Add(new TodoItem {Title = newTodo});
-            newTodo = string.Empty;
-        } 
+            if(editedId == 0){
+                todos.Add(new TodoItem {Title = newTodo});
+                newTodo = string.Empty;
+            }
+            else{
+                var myTodo = todos.FirstOrDefault(x => x.id == editedId);
+                myTodo.Title = newTodo;
+                newTodo = string.Empty;
+                editedId = 0;
+            }
+        }  
     }
+
+    public void EditTodo(int index){
+        var myTodo = todos.FirstOrDefault(x => x.id == index);
+        newTodo = myTodo.Title;
+        myTodo.Title = newTodo;
+        editedId = index;
+    }   
 
     private void DeleteTodo(int index){
         todos.RemoveAt(index);

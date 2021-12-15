@@ -4,8 +4,6 @@ F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.AssemblyInfo.cs
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.csproj.CoreCompileInputs.cache
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.MvcApplicationPartsAssemblyInfo.cache
-F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.RazorAssemblyInfo.cache
-F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.RazorAssemblyInfo.cs
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\appsettings.Development.json
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\appsettings.json
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\BlazorTodo.staticwebassets.runtime.json
@@ -30,3 +28,12 @@ F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\appset
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\appsettings.json
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\BlazorTodo.deps.json
 F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\dist\BlazorTodo.runtimeconfig.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.RazorAssemblyInfo.cache
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.RazorAssemblyInfo.cs
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\package-lock.json
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\Havit.Blazor.Components.Web.dll
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\Havit.Blazor.Components.Web.Bootstrap.dll
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\Havit.Core.dll
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\cs\Havit.Blazor.Components.Web.Bootstrap.resources.dll
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\obj\Debug\net6.0\BlazorTodo.csproj.CopyComplete
+F:\Technosoft\Blazor - calculator + todo\BlazorTodo\bin\Debug\net6.0\MatBlazor.dll

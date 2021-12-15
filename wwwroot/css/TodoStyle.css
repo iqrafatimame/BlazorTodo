@@ -104,3 +104,20 @@ li:hover {
   font-weight: 700;
   color: #555;
 }
+
+.fas fa-edit{
+  color: blue;
+}
+
+.actions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item-edit{
+  padding: 0px 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
